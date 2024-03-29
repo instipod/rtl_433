@@ -270,6 +270,7 @@ static int ert_idm_decode(r_device *decoder, bitbuffer_t *bitbuffer)
             "ERTType",                          "",     DATA_FORMAT,  "0x%02X", DATA_INT,    ERTType,
             // "ERTType",                          "",     DATA_INT,       ERTType,
             "ERTSerialNumber",                  "",     DATA_INT,       ERTSerialNumber,
+            "id",                               "",     DATA_INT,       ERTSerialNumber,
             "ConsumptionIntervalCount",         "",     DATA_INT,       ConsumptionIntervalCount,
             // "ModuleProgrammingState",           "",     DATA_FORMAT, "0x%02X", DATA_INT, ModuleProgrammingState,
             "ModuleProgrammingState",           "",     DATA_FORMAT, "0x%02X", DATA_INT, ModuleProgrammingState,
@@ -554,6 +555,7 @@ static int ert_netidm_decode(r_device *decoder, bitbuffer_t *bitbuffer)
 
             "ERTType",                          "",     DATA_FORMAT,  "0x%02X", DATA_INT,    ERTType,
             "ERTSerialNumber",                  "",     DATA_INT,       ERTSerialNumber,
+            "id",                               "",     DATA_INT,       ERTSerialNumber,
             "ConsumptionIntervalCount",         "",     DATA_INT,       ConsumptionIntervalCount,
             "ModuleProgrammingState",           "",     DATA_FORMAT, "0x%02X", DATA_INT, ModuleProgrammingState,
             // "ModuleProgrammingState",           "",     DATA_STRING,    ModuleProgrammingState_str,
@@ -593,6 +595,7 @@ static char const *const output_fields[] = {
         "ERTSerialNumber",
         "ConsumptionIntervalCount",
         "ModuleProgrammingState",
+        "id",
 
         // NetIDM Only
         "Unknown_field_1",
